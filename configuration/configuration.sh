@@ -57,7 +57,7 @@ cp -f android-output/colors.xml $ANDROID_LOCAL_COLOR_RESOURCE_PATH
 # ================ iOS ====================
 
 # Location of iOS local resource file to be replaced
-IOS_LOCAL_COLOR_RESOURCE_PATH='../iOS/iOS-pre-build-configuration/theme.xcassets/'
+IOS_LOCAL_COLOR_RESOURCE_PATH='../iOS/iOS-pre-build-configuration/Assets.xcassets'
 
 # Create a folder for the output on iOS
 mkdir -p ios-output
@@ -99,6 +99,8 @@ for((i=0; i < $SIZE; i++)); do
 
     for j in "${!IOS_HEX_COLOR_KEYS[@]}"; do
         replaceValues ${IOS_HEX_COLOR_KEYS[$j]} ${IOS_HEX_COLOR_VALUES[$j]} ios-output/${IOS_FOLDERS[$i]}/Contents.json
+        # what means -p in bash scripting?  
+        mkdir -p $IOS_LOCAL_COLOR_RESOURCE_PATH/${IOS_FOLDERS[$i]}
         cp -f ios-output/${IOS_FOLDERS[$i]}/Contents.json $IOS_LOCAL_COLOR_RESOURCE_PATH/${IOS_FOLDERS[$i]}/
     done
     

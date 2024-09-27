@@ -13,7 +13,6 @@
 		9E62125D28B91BEC005F164E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E62125B28B91BEC005F164E /* Main.storyboard */; };
 		9E62125F28B91BEE005F164E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E62125E28B91BEE005F164E /* Assets.xcassets */; };
 		9E62126228B91BEE005F164E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E62126028B91BEE005F164E /* LaunchScreen.storyboard */; };
-		9E62126A28B91D78005F164E /* theme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E62126928B91D78005F164E /* theme.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		9E62125E28B91BEE005F164E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E62126128B91BEE005F164E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E62126328B91BEE005F164E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E62126928B91D78005F164E /* theme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = theme.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				9E62125528B91BEC005F164E /* AppDelegate.swift */,
-				9E62126928B91D78005F164E /* theme.xcassets */,
 				9E62125728B91BEC005F164E /* SceneDelegate.swift */,
 				9E62125928B91BEC005F164E /* ViewController.swift */,
 				9E62125B28B91BEC005F164E /* Main.storyboard */,
@@ -130,7 +127,6 @@
 			files = (
 				9E62126228B91BEE005F164E /* LaunchScreen.storyboard in Resources */,
 				9E62125F28B91BEE005F164E /* Assets.xcassets in Resources */,
-				9E62126A28B91D78005F164E /* theme.xcassets in Resources */,
 				9E62125D28B91BEC005F164E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
