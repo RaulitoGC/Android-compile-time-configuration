@@ -15,8 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let customColor = UIColor(named: "CustomBrownColor")!.resolvedColor(with: UITraitCollection(userInterfaceStyle: .unspecified))
-        logoImage.tintColor = customColor
+        if let customColor = UIColor(named: "colorAccent") {
+            customColor.resolvedColor(with: UITraitCollection(userInterfaceStyle: .unspecified))
+            logoImage.tintColor = customColor
+        }
     
     }
 

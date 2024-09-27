@@ -39,7 +39,7 @@ done
 # ================ Android ====================
 
 # Location of android local resource file to be replaced
-LOCAL_COLOR_RESOURCE_PATH='../android/app/src/main/res/values/'
+ANDROID_LOCAL_COLOR_RESOURCE_PATH='../android/app/src/main/res/values/'
 
 # Creating output folder, copy the color file format and rename it
 mkdir -p android-output
@@ -52,12 +52,12 @@ for((i=0; i < $SIZE; i++)); do
 done
 
 # Move and replace the current local colors file
-cp -f android-output/colors.xml $LOCAL_COLOR_RESOURCE_PATH
+cp -f android-output/colors.xml $ANDROID_LOCAL_COLOR_RESOURCE_PATH
 
 # ================ iOS ====================
 
 # Location of iOS local resource file to be replaced
-LOCAL_IMAGE_COLOR_RESOURCE_PATH='../iOS/iOS-pre-build-configuration/theme.xcassets/'
+IOS_LOCAL_COLOR_RESOURCE_PATH='../iOS/iOS-pre-build-configuration/theme.xcassets/'
 
 # Create a folder for the output on iOS
 mkdir -p ios-output
@@ -99,7 +99,7 @@ for((i=0; i < $SIZE; i++)); do
 
     for j in "${!IOS_HEX_COLOR_KEYS[@]}"; do
         replaceValues ${IOS_HEX_COLOR_KEYS[$j]} ${IOS_HEX_COLOR_VALUES[$j]} ios-output/${IOS_FOLDERS[$i]}/Contents.json
-        cp -f ios-output/${IOS_FOLDERS[$i]}/Contents.json $LOCAL_IMAGE_COLOR_RESOURCE_PATH/${IOS_FOLDERS[$i]}/
+        cp -f ios-output/${IOS_FOLDERS[$i]}/Contents.json $IOS_LOCAL_COLOR_RESOURCE_PATH/${IOS_FOLDERS[$i]}/
     done
     
 done
