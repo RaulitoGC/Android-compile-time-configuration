@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 Streamlined Build Process: Use Gradle commands for Android and Xcode commands for iOS to build and install your apps efficiently.
 
 ## 📚 Article
-For a comprehensive guide on how these scripts work and their benefits, check out my article: Read the Article Here.
+For a comprehensive guide on how these scripts work and their benefits, check out my article: [Read the Article Here](https://medium.com/@rguzmanc.161/advanced-bash-techniques-for-dynamic-android-resource-handling-5c208a6cdb2a).
 
 ## 🤝 Contributing
 Contributions are welcome! If you have suggestions for improvements or additional features, feel free to open an issue or submit a pull request.
